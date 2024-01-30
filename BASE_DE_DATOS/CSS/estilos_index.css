@@ -1,0 +1,48 @@
+body{
+  background-image: url("/Imagenes/360_F_116153804_EmYnusFGJbk0uGY4J1BeuUX0NfmuEpFJ.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-style: normal;
+  color: hotpink;
+}
+
+div.contenedor {
+  border: 4px dashed palevioletred;
+  overflow: auto;
+  float: right;
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px;
+  background-color: #ec82a2;
+  border-radius: 5px;
+  font-style: normal ;
+}
+.a {
+  text-decoration: none;
+  color: #f1faee;
+}
+
+.imagen_1 {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+div.contenedor_2 {
+  border: 4px dashed palevioletred;
+  overflow: auto;
+  max-width: 60%;
+  max-height: 60%;
+  display: flex;
+  justify-content: center;
+}

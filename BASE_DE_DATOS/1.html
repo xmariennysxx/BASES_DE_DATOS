@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RELACIONES</title>
+    <link rel="stylesheet" href="/CSS/estilos_1.css">
+    <link rel="stylesheet" href="/dist/output.css"></link>
+    </head>
+  <body>
+    <ul class="menu">
+      <li>
+        <a href="Index.html" class="font-bold text-white">BASES DE DATOS</a>
+      </li>
+      <li>
+        <a href="1.html" class="font-bold text-white"
+          >RELACIONES Y CARDINALIDAD</a
+        >
+      </li>
+      <li><a href="2.html" class="font-bold text-white">TABLAS</a></li>
+      <li>
+        <a href="3.html" class="font-bold text-white"
+          >MODELO ENTIDAD RELACIÓN</a
+        >
+      </li>
+      <li><a href="4.html" class="font-bold text-white">NORMALIZACIÓN</a></li>
+    </ul>
+    <div class="bg-slate-50 size-44 m-12  rounded-lg border-pink-300 border-2">
+      <h1 class="text-6xl text-center font-extrabold" id="titulo_relaciones">
+        RELACIONES Y CARDINALIDAD
+      </h1>
+    </div>
+
+    <h2 class="text-5xl font-bold text-pink-500 font-serif">ENTIDAD</h2>
+    <br></br>
+    <p class="text-justify">
+    Una entidad es una cosa u objeto. Un objeto es una unidad dentro de un programa de computadora que consta de un estado y de un comportamiento, que a su vez constan respectivamente de datos almacenados del mundo real, también puede ser un concepto abstracto y es distinguible de todos los demás objetos. Una entidad tiene un conjunto de propiedades o atributos que la caracterizan.
+      <br></br>
+      <b>Ejemplos: Personas, Animales, Casas, Autos, etc.</b>
+    </p>
+    <br></br>
+    <h2 class="text-5xl font-bold text-pink-500 font-serif">ATRIBUTO</h2>
+    <br></br>
+    <p class="text-justify">Los atributos son las características o propiedades de una entidad. Cada uno de los elementos de la entidad poseen los mismos atributos y a cada atributo se le asigna un valor único por cada elemento. Tomando la entidad “Persona” como ejemplo, identificamos algunas propiedades en ella como son: identificación, nombres, apellidos, fecha de nacimiento, sexo, etc.</p>
+    <br></br>
+    <div class="contenedor rounded-lg "><img src="/Imagenes/atributos-valores.png" alt="atributos"></div>
+    <br></br>
+    <h2 class="text-6xl font-bold text-pink-500 font-serif">RELACIÓN</h2>
+    <br></br>
+    <p class="text-justify">Una relación es una asociación entre diferentes entidades. Es un vínculo que nos permite definir una dependencia, es decir, nos permite exigir que varias entidades compartan ciertos atributos de forma indispensable.
+<br></br>
+<p>Si tomamos como ejemplo la entidad “Estudiante” y la entidad “Libros” dentro del contexto de un colegio, podríamos ver que entre estas existe una relación, la cual llamaremos “Prestar”, dado que el estudiante presta libros y análogamente estos libros son prestados por estudiantes.</p>
+<br></br>
+</li>
+<br>
+<div class="bg-rose-400 size-200 rounded-lg border-pink-300 border-2"><ul>
+<li class="text-justify text-lg text-rose-50"><b class="text-2xl text-rose-50">➤REFLEXIVA</b>
+Esta se da cuando una entidad se relaciona consigo misma. Tomando como ejemplo la entidad persona, esta podría ser reflexiva a través de la relación “Trabajar”, dado que una persona puede trabajar para otra persona.
+</li>
+<br>
+<li class="text-justify text-rose-50" ><b class="text-2xl text-rose-50">➤BINARIA</b>
+Esta se presenta cuando existe una relación únicamente entre 2 entidades. Como ejemplo consideremos las entidades “Persona” y “Auto” las cuales se pueden relacionar a través de la relación “Poseer”. 
+</li>
+<br>
+<li class="text-justify text-rose-50"><b class="text-2xl text-rose-50">➤N-ARIA</b>
+En este caso en una misma relación intervienen más de 2 entidades. Como ejemplo tomemos las entidades “Periodista”, “Articulo” y “Periódico” las cuales se pueden relacionar a través de la relación “Escribir”.
+</li>
+</ul></div>
+<div class="contenedor_2 rounded-lg "  ><img src="/Imagenes/Que-son-las-Relaciones-en-bases-de-datos-Jairo-Galeas-Curso-de-Bases-de-datos.png" alt="relaciones"></div>
+<br></br>
+<br></br>
+
+  <h2 class="text-6xl font-bold text-pink-500 font-serif">CARDINALIDAD</h2>
+  <p class="text-lg text-justify">Llamada también multiplicidad. Indica la cantidad de elementos o instancias de una entidad A que se relacionan con una instancia de una Entidad B y viceversa. Esta puede ser de 3 tipos:</p>
+
+ <div class="bg-rose-400 size-200 rounded-lg border-pink-300 border-2"><ul>
+  <li class="text-justify text-rose-50"><b class="text-xl text-rose-50">➤Uno a Uno (1:1)</b>
+Esta se da cuando un registro o elemento de una entidad A se relaciona únicamente con un solo registro de una entidad B y viceversa.
+<br></br>
+Ejemplo: Tomando la entidad “Profesor” y la entidad “Cubículo”, con la relación “Asignar”, tenemos que, a un profesor se le asigna solo un cubículo y un cubículo se le asigna a un solo profesor.</li>
+<li class="text-justify text-rose-50"><b class="text-xl text-rose-50">➤Uno a Muchos (1:M)</b>Esta se da cuando un registro de una entidad A se relaciona con cero o varios registros de una entidad B, y cada registro de la entidad B se relaciona únicamente con un registro de la entidad A.
+<Br></Br>
+Ejemplo: Si se tiene las entidades “Ciudad” y “País” con la relación “Pertenecer” veríamos que a un país pertenecen muchas ciudades pero cada una de esas ciudades pertenece a un solo país. Tomando un caso en particular, en Venezuela hay muchas ciudades entre ellas Valencia, pero Valencia solo se encuentra en un solo país, el cual es Venezuela</li>
+<li class="text-justify text-rose-50"><b class="text-xl text-rose-50">➤Muchos a Muchos (M:M)</b>Esta se da cuando un registro de una entidad A se relaciona con cero o varios registros de una entidad B, y un registro de una entidad B se relaciona con cero o varios registros de la entidad A.
+<Br></Br>
+Ejemplo: En el caso de los “Estudiantes” y los “Libros”, existe una relación de muchos a muchos, dado que un estudiante puede prestar varios libros en el transcurso del año, y a su vez cada libro es prestado por muchos estudiantes.</li></ul></div>
+<Br></Br> 
+<Br></Br>
+<div class="contenedor_3 rounded-lg"  >
+  <video src="/Videos/Modelo Entidad Relación  Tutorial Rápido_480p.mp4" controls alt="video_1"></video>
+</div>
+<br>
+<br>
+<button class="bg-rose-500 text-white font-semibold p-2 rounded-lg w-30 mx-auto">
+      <a href="Index.html">ANTERIOR</a>
+    </button>
+    <button class="bg-rose-500 text-white font-semibold p-2 rounded-lg w-30 mx-auto">
+      <a href="2.html"> SIGUIENTE</a>
+    </button>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NORMALIZACION</title>
+    <link rel="stylesheet" href="/CSS/estilos_4.css" />
+    <link rel="stylesheet" href="/dist/output.css"></link>
+  </head>
+  <body><ul class="menu">
+      <li>
+        <a href="Index.html" class="font-bold text-white">BASES DE DATOS</a>
+      </li>
+      <li>
+        <a href="1.html" class="font-bold text-white"
+          >RELACIONES Y CARDINALIDAD</a
+        >
+      </li>
+      <li><a href="2.html" class="font-bold text-white">TABLAS</a></li>
+      <li>
+        <a href="3.html" class="font-bold text-white"
+          >MODELO ENTIDAD RELACIÓN</a
+        >
+      </li>
+      <li><a href="4.html" class="font-bold text-white">NORMALIZACIÓN</a></li>
+    </ul>
+    <div
+      class="bg-slate-50 size-52  rounded-lg border-pink-300 border-2"
+    >
+      <h1 class="text-6xl text-center font-extrabold" id="titulo_relaciones">
+        NORMALIZACIÓN
+      </h1>
+    </div>
+  <br></br>
+    <p class="text-justify text-lg">
+    La normalización es la transformación de las vistas de usuario complejas y del almacén de datos a un juego de estructuras de datos más pequeñas y estables. Además de ser más simples y estables, las estructuras de datos son más fáciles de mantener que otras estructuras de datos. 
+    <Br></Br>
+    <b></b></p>
+    <div class="bg-rose-500 size-auto p-2 rounded-lg border-rose-400 border-2"><ol class="text-gray-50 font-extrabold">
+    <li class="text-justify" >➤Evitar la redundancia de los datos. </li>
+    <li class="text-justify" >➤Evitar problemas de actualización de los datos en las tablas. </li>
+    <li class="text-justify" >➤Proteger la integridad de los datos. </li>
+    <li class="text-justify">➤En el modelo relacional es frecuente llamar tabla a una relación, aunque para que una tabla sea considerada como una relación tiene que cumplir con algunas restricciones:</li>
+    <li class="text-justify">➤Cada columna debe tener su nombre único. 
+</li>
+    <li class="text-justify">➤No puede haber dos filas iguales. No se permiten los duplicados.</li>
+    <li class="text-justify">➤Todos los datos en una columna deben ser del mismo tipo. </li>
+    </ol></div>
+      <br></br>
+      <p class="text-justify">Existen básicamente tres niveles de normalización: <b>Primera Forma Normal (1NF), Segunda Forma Normal (2NF) y Tercera Forma Normal (3NF).</b> Cada una de estas formas tiene sus propias reglas. Cuando una base de datos se conforma a un nivel, se considera normalizada a esa forma de normalización. No siempre es una buena idea tener una base de datos conformada en el nivel más alto de normalización, puede llevar a un nivel de complejidad que pudiera ser evitado si estuviera en un nivel más bajo de normalización. 
+</p>
+<Br></Br>
+<center><div class="contenedor rounded-lg "><img src="/Imagenes/Imagen1.png" alt="rosa"></div></center>
+<Br></Br>
+<div class="bg-pink-600 size-auto p-2 rounded-lg border-rose-400 border-2"><ol class="text-gray-50"><li class="text-justify"><b>✧PRIMERA FORMA NORMAL(1FN):</b>La regla de la Primera Forma Normal establece que las columnas repetidas deben eliminarse y colocarse en tablas separadas. Poner la base de datos en la Primera Forma Normal resuelve el problema de los encabezados de columna múltiples. Muy a menudo, los diseñadores de bases de datos inexpertos harán algo similar a la tabla no normalizada. Una y otra vez, crearán columnas que representen los mismos datos. La normalización ayuda a clarificar la base de datos y a organizarla en partes más pequeñas y más fáciles de entender. En lugar de tener que entender una tabla gigantesca y monolítica que tiene muchos diferentes aspectos, sólo tenemos que entender los objetos pequeños y más tangibles, así como las relaciones que guardan con otros objetos también pequeños. </li>
+  <Br></Br>
+<li class="text-justify"><b>✧SEGUNDA FORMA NORMAL(2FN):</b>La regla de la Segunda Forma Normal establece que todas las dependencias parciales se deben eliminar y separar dentro de sus propias tablas. Una dependencia parcial es un término que describe a aquellos datos que no dependen de la llave primaria de la tabla para identificarlos. Una vez alcanzado el nivel de la Segunda Forma Normal, se controlan la mayoría de los problemas de lógica. Podemos insertar un registro sin un exceso de datos en la mayoría de las tablas.
+</li>
+<Br></Br>
+<li class="text-justify"><b>✧TERCERA FORMA NORMAL(3FN):</b>Una tabla está normalizada en esta forma si todas las columnas que no son llave son funcionalmente dependientes por completo de la llave primaria y no hay dependencias transitivas. Comentamos anteriormente que una dependencia transitiva es aquella en la cual existen columnas que no son llave que dependen de otras columnas que tampoco son llave. Cuando las tablas están en la Tercera Forma Normal se previenen errores de lógica cuando se insertan o borran registros. Cada columna en una tabla está identificada de manera única por la llave primaria, y no deben haber datos repetidos. Esto provee un esquema limpio y elegante, que es fácil de trabajar y expandir
+</li></ol></div>
+<Br></Br>
+<Br></Br>
+<center><div class="contenedor_2 rounded-lg "  >
+  <img src="/Imagenes/db-redundancia3.jpg" alt="imagen_2" />
+</div></center>
+ <br> 
+ <br>
+<button class="bg-rose-500 text-white font-semibold p-2 rounded-lg w-30 mx-auto">
+      <a href="3.html">ANTERIOR</a>
+    </button>
+    <button class="bg-rose-500 text-white font-semibold p-2 rounded-lg w-30 mx-auto">
+      <a href="Index.html"> IR AL INICIO</a>
+    </button>
+ </body>
+</html>
